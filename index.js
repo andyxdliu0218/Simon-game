@@ -59,7 +59,7 @@ function displayPattern(pattern) {
 }
 
 function wrongButton() {
-  let wrongSoundAudio = new Audio("wrong.mp3");
+  let wrongSoundAudio = new Audio("./wrong.mp3");
   wrongSoundAudio.play();
   $("body").addClass("game-over");
   setTimeout(() => $("body").removeClass("game-over"), 200);
@@ -76,7 +76,7 @@ function randomColor() {
 }
 
 function makeSound(id) {
-  let audio = new Audio(`${id}.mp3`);
+  let audio = new Audio(`./${id}.mp3`);
   audio.play();
 }
 
